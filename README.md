@@ -1,9 +1,10 @@
-Nginx Prometheus Metrics
-===
+# Nginx Prometheus Metrics
+
+![Docker Pulls](https://img.shields.io/docker/pulls/sophos/nginx-prometheus-metrics.svg)
+
 A simple demo to collect prometheus metrics for nginx.
 
-How to run
----
+## How to run
 
 ```
 docker pull sophos/nginx_prometheus_metrics
@@ -24,13 +25,11 @@ nginx_http_connections{state="writing"} 1
 # TYPE nginx_metric_errors_total counter
 nginx_metric_errors_total 0
 ```
-How to build
----
+## How to build
 
 ```
 docker build -t nginx_prometheus_metrics .
 ```
 
-Why use nginx_prometheus_metrics
----
+## Why use nginx_prometheus_metrics
 This is absolutely a good question, but please just try it before you ask.
