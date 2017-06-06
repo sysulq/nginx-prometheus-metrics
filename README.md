@@ -4,6 +4,8 @@
 
 A simple demo to collect prometheus metrics for nginx.
 
+[Docker Hub: sophos/nginx_prometheus_metrics](https://hub.docker.com/r/sophos/nginx-prometheus-metrics)
+
 ## How to run
 
 ```
