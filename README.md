@@ -20,8 +20,9 @@ docker build -t nginx_prometheus_metrics .
 
 ```
 docker pull sophos/nginx-prometheus-metrics
-docker run -it -p 80:80 -p 1314:1314 -p 9527:9527 sophos/nginx-prometheus-metrics
+docker run -d --rm -it -p 80:80 -p 1314:1314 -p 9527:9527 sophos/nginx-prometheus-metrics
 ```
+
 Visit [http://localhost:1314](http://localhost:1314) to generate some test metrics.
 
 Then visit [http://localhost:9527/metrics](http://localhost:9527/metrics) in your browser(safari/chrome).
