@@ -1,5 +1,6 @@
 # Nginx Prometheus Metrics
 
+[![Docker Repository on Quay](https://quay.io/repository/hnlq715/nginx-prometheus-metrics/status "Docker Repository on Quay")](https://quay.io/repository/hnlq715/nginx-prometheus-metrics)
 ![Docker Pulls](https://img.shields.io/docker/pulls/sophos/nginx-prometheus-metrics.svg)
 
 A simple demo to collect prometheus metrics for nginx.
