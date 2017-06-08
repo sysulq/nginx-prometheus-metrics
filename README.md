@@ -4,7 +4,7 @@
 
 A simple demo to collect prometheus metrics for nginx.
 
-[Docker Hub: sophos/nginx_prometheus_metrics](https://hub.docker.com/r/sophos/nginx-prometheus-metrics)
+[Docker Hub: sophos/nginx-prometheus-metrics](https://hub.docker.com/r/sophos/nginx-prometheus-metrics)
 
 ## Why use nginx_prometheus_metrics
 This is absolutely a good question, but please just try it before you ask.
@@ -18,7 +18,7 @@ docker build -t nginx_prometheus_metrics .
 ## How to run
 
 ```
-docker pull sophos/nginx_prometheus_metrics
+docker pull sophos/nginx-prometheus-metrics
 docker run -it -p 80:80 -p 1314:1314 -p 9527:9527 sophos/nginx-prometheus-metrics
 ```
 Visit [http://localhost:1314](http://localhost:1314) to generate some test metrics.
