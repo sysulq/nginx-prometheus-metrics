@@ -1,7 +1,14 @@
+lua_shared_dict prometheus_metrics 10M;
+lua_package_path '/usr/local/openresty/luajit/lib/?.lua;;';
+
+init_by_lua_file /usr/local/openresty/nginx/conf/init.lua;
+log_by_lua_file /usr/local/openresty/nginx/conf/log.lua;
+
 server {
     listen 9527;
     #allow 192.168.0.0/16;
     #deny all;
+
     location /metrics {
         content_by_lua_block {
             if ngx.var.connections_active ~= nil then

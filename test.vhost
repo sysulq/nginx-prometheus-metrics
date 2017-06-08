@@ -1,0 +1,14 @@
+upstream testservers {
+    server 10.12.13.14;
+    server 127.0.0.1;
+}
+
+server {
+    listen 1314;
+    server_name  localhost;
+
+    location / {
+        proxy_pass http://testservers;
+        proxy_connect_timeout 2s;
+    }
+}
