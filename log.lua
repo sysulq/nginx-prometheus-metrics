@@ -22,7 +22,7 @@ http_request_time:observe(ngx.now() - ngx.req.start_time(), {host})
 
 local upstream_cache_status = ngx.var.upstream_cache_status
 if upstream_cache_status ~= nil then
-   upstream_cache_status:inc(1, {addr, upstream_cache_status})
+   upstream_cache_status:inc(1, {host, upstream_cache_status})
 end
 
 local upstream_addr = ngx.var.upstream_addr
