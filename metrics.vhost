@@ -30,7 +30,7 @@ init_by_lua_block {
         "nginx_http_upstream_connect_time", "HTTP upstream connect time", {"addr"})
     http_upstream_first_byte_time = prometheus:histogram(
         "nginx_http_upstream_first_byte_time", "HTTP upstream first byte time", {"addr"})
-    ttp_upstream_session_time = prometheus:histogram(
+    http_upstream_session_time = prometheus:histogram(
         "nginx_http_upstream_session_time", "HTTP upstream session time", {"addr"})
 
 }
