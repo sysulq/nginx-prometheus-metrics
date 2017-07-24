@@ -9,9 +9,9 @@ init_by_lua_block {
     http_request_time = prometheus:histogram(
         "nginx_http_request_time", "HTTP request time", {"host"})
     http_request_bytes_received = prometheus:counter(
-        "nginx_http_request_bytes", "Number of HTTP request bytes received", {"host"})
+        "nginx_http_request_bytes_received", "Number of HTTP request bytes received", {"host"})
     http_request_bytes_sent = prometheus:counter(
-        "nginx_http_request_sent", "Number of HTTP request bytes sent", {"host"})
+        "nginx_http_request_bytes_sent", "Number of HTTP request bytes sent", {"host"})
     http_connections = prometheus:gauge(
         "nginx_http_connections", "Number of HTTP connections", {"state"})
     http_upstream_cache_status = prometheus:counter(
