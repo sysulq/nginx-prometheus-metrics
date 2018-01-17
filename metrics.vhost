@@ -65,7 +65,7 @@ log_by_lua_block {
 
     local upstream_cache_status = ngx.var.upstream_cache_status
     if upstream_cache_status ~= nil then
-        upstream_cache_status:inc(1, {host, upstream_cache_status})
+        http_upstream_cache_status:inc(1, {host, upstream_cache_status})
     end
 
     local upstream_addr = ngx.var.upstream_addr
