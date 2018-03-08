@@ -1,7 +1,7 @@
 # Nginx Prometheus Metrics
 
 [![Docker Repository on Quay](https://quay.io/repository/hnlq715/nginx-prometheus-metrics/status "Docker Repository on Quay")](https://quay.io/repository/hnlq715/nginx-prometheus-metrics)
-![Docker Pulls](https://img.shields.io/docker/pulls/sophos/nginx-prometheus-metrics.svg)
+[![Docker Pulls](https://img.shields.io/docker/pulls/sophos/nginx-prometheus-metrics.svg)](https://hub.docker.com/r/sophos/nginx-prometheus-metrics/)
 
 A simple demo to collect prometheus metrics for nginx, version 1.11.4 or above recommended.
 
